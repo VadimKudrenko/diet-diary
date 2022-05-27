@@ -1,38 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main-orange-color: #ff9800 */
+
+#root {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  /* background-image: url('img/back.jpg'); */
+  /* background-color: #363131f0; */
+  /* background-color: #191717f2; */
+  /* background-color: #000; */
+  /* #292928 */
+
+}
+
 .App {
+  background-color: #ff9800;
+  border: solid 2px #0000005e;
+  border-radius: 20px;
+  min-width: 800px;
+  padding: 50px 100px;
+}
+
+.app-title {
+  color: #fff;
+  text-shadow: 3px 2px 1px #000;
+  margin-top: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-divider {
+  background-color: #3e3c390f;
+  border-radius: 20px;
+  /* width: 100%; */
+  height: 2px;
+  margin: 30px 7%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* PRODUCTS LIST */
+
+.product-list {
+  background-color: #fff;
+  border: solid 2px #3e3c390f;
+  border-radius: 10px;
+  padding: 55px 30px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products-form {
+  
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+.products-form-inner {
+  display: flex;
+}
+
+.products {
+  min-width: 135px;
+}
+
+.weight {
+  max-width: 75px;
+}
+
+.products-wrapper, .weight-wrapper {
+  position: relative;
+}
+
+.products-wrapper {
+  margin-right: 30px;
+}
+
+.products-label, .weight-label {
+  position: absolute;
+  top: -25px;
+}
+
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: #3e3c390f;
+  margin: auto;
+}
+
+.divider-wrapper {
+  margin: 30px 0;
+}
+
+
+
+
+.portion {
+  display: flex;
+  width: 100%;
+  border-bottom: solid 2px #3e3c390f;
+}
+
+/* .portion:last-child {
+  margin-bottom: 30px;
+} */
+
+.portion-option {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* border-bottom: solid 2px #3e3c390f; */
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.portion-option-title {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portion-number {
+  width: 5%;
 }
+
+.portion-product-name {
+  width: 35%;
+}
+
+.portion-product-weight {
+  width: 20%;
+}
+
+#portion-sbmt-btn {
+  display: flex;
+}
+
+
+/**** RESULTS ****/
+
+
+.results {
+  background-color: #343434;
+  max-width: 95%;
+  padding: 3%;
+  margin: auto;
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+  border: solid 2px #0000005e;
+}
+
+.result__portion-title-wrapper {
+  display: flex;
+}
+
+
+.result__portion-wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.result__portion {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: solid 1px #34343424;
+}
+.result__portion-total {
+  display: flex;
+  padding: 10px 0;
+}
+
+.result__portion-txt {
+  /* color: #e6e6e6; */
+  color: #000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.result__portion-title {
+  color: #fcfcfc;
+}
+
+.result__portion-name { width: 30%; }
+.result__portion-weight { width: 14%; }
+.result__portion-kkcal { width: 14%; }
+.result__portion-proteins { width: 14%; }
+.result__portion-fats { width: 14%; }
+.result__portion-carbohydrates { width: 14%; }
+
+.result__portion-total-txt { width: 44%; border-right: solid 1px #dfdfdf; font-weight: bold; }
+.result__portion-total-kkcal { width: 14%; font-weight: bold; }
+.result__portion-total-proteins { width: 14%; font-weight: bold; }
+.result__portion-total-fats { width: 14%; font-weight: bold; }
+.result__portion-total-carbohydrates { width: 14%; font-weight: bold; }
+
+
+
+/* .portion-product-kkcal {
+  width: 15%;
+}
+
+.portion-product-proteins {
+  width: 15%;
+}
+
+.portion-product-fats {
+  width: 15%;
+}
+
+.portion-product-carbohydrates {
+  width: 15%;
+} */

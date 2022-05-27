@@ -1,0 +1,17 @@
+.ProductsListSubmitBtn {
+  width: 100px;
+  height: 30px;
+  color: #0c98aa;
+  background-color: #fff;
+  border: solid 2px #0c98aa;
+  transition: .2s;
+  text-transform: uppercase;
+}
+
+.ProductsListSubmitBtn:hover {
+  cursor: pointer;
+  background-color: #0c98aa;
+  border: 1px solid #fff;
+  color: #fff;
+
+}
