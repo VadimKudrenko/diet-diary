@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
 
 import './App.css';
-import ProductsList from './components/ProductsList.jsx'
-import ResultPortion from './components/ResultPortion.jsx'
-
+import ProductsList from './components/ProductsList.jsx';
+import ResultPortion from './components/ResultPortion.jsx';
 
 
 function App() {
+
   const [productsList, setProductsList] = useState([]);
 
   const getProducts = (products) => {

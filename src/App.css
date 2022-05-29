@@ -30,10 +30,16 @@
   max-width: 800px;
 }
 
+@media (max-width: 992px) {
+  .App {
+    width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
   .App {
     min-width: unset;
-    padding: 50px 50px;
+    padding: 30px 50px;
     width: 100%;
     border-radius: 0px;
     margin: 0;
@@ -43,7 +49,7 @@
 
 @media (max-width: 576px) {
   .App {
-    padding: 50px 5px;
+    padding: 10px 5px 50px 5px;
   }
 }
 
@@ -73,11 +79,35 @@
 }
 
 .products-form {
-  
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+.products-form__weight-btn-wrapper {
+  display: flex;
+  justify-content: left;
+  padding: 20px 0;
+}
+
+.products-form__weight-btn {
+  width: 50px;
+  height: 30px;
+  margin-right: 20px;
+  color: #0c98aa;
+  background-color: #fff;
+  border: solid 2px #0c98aa;
+  transition: .2s;
+  text-transform: uppercase;
+}
+
+.products-form__weight-btn:hover {
+  cursor: pointer;
+  background-color: #0c98aa;
+  border: 1px solid #0c98aa;
+  color: #fff;
+}
+
 
 .products-form-inner {
   display: flex;
@@ -88,7 +118,7 @@
 }
 
 .weight {
-  max-width: 75px;
+  width: 90%;
 }
 
 .products-wrapper, .weight-wrapper {

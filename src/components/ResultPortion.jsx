@@ -21,8 +21,6 @@ const ResultPortion = ({products}) => {
   result.fats = +(result.fats).toFixed(1);
   result.carbohydrates = +(result.carbohydrates).toFixed(1);
 
-  console.log(result);
-
   return (
     <div className="result__portion-wrapper">
 
