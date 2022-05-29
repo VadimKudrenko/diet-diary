@@ -7,7 +7,6 @@
 /* main-orange-color: #ff9800 */
 
 #root {
-  margin: 50px 0;
   display: flex;
   justify-content: center;
 }
@@ -22,12 +21,31 @@
 }
 
 .App {
+  margin: 50px 0;
   background-color: #ff9800;
   border: solid 2px #0000005e;
   border-radius: 20px;
-  min-width: 800px;
+  width: 90%;
   padding: 50px 100px;
 }
+
+@media (max-width: 768px) {
+  .App {
+    padding: 50px 50px;
+    width: 100%;
+    border-radius: 0px;
+    margin: 0;
+    height: 100vh;
+    height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .App {
+    padding: 50px 5px;
+  }
+}
+
 
 .app-title {
   color: #fff;
@@ -97,7 +115,36 @@
   margin: 30px 0;
 }
 
+@media (max-width: 768px) {
+  .products-form {
+    flex-direction: column;
+  }
 
+  .products-form-inner {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .products-wrapper {
+    margin: 30px 0 60px 0;
+  }
+
+  .products {
+    min-width: none;
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  .weight {
+    max-width: none;
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  .products-form__add-button-wrapper{
+    margin-top: 30px;
+  }
+}
 
 
 .portion {
@@ -179,7 +226,8 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  font-size: 16px;
 }
 
 .result__portion-title {
@@ -199,6 +247,17 @@
 .result__portion-total-fats { width: 14%; font-weight: bold; }
 .result__portion-total-carbohydrates { width: 14%; font-weight: bold; }
 
+@media (max-width: 768px) {
+  .result__portion-txt {
+   font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .result__portion-txt {
+    font-size: 12px;
+  }
+}
 
 
 /* .portion-product-kkcal {
