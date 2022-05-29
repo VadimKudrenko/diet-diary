@@ -10,7 +10,7 @@ const ProductsForm = ({create}) => {
   let [meal, setMeal] = useState(
     {
       name: '',
-      weight: '',
+      weight: 0,
       product: products[0].id,
       kkcal: 0,
       proteins: 0,
@@ -52,7 +52,7 @@ const ProductsForm = ({create}) => {
       carbohydrates: +getCarbohydrates.toFixed(1),
     }
     create(newMeal);
-    setMeal({weight: '', product: products[0].id});
+    setMeal({weight: 0, product: products[0].id});
 
   }
 
@@ -82,7 +82,9 @@ const ProductsForm = ({create}) => {
             placeholder="0"></input>
         </div>
       </div>
-      <button onClick={(e) => addNewMeal(e)} className={classes.ProductsListSubmitBtn} type="submit">Add</button>
+      <div className="products-form__add-button-wrapper">
+        <button onClick={(e) => addNewMeal(e)} className={classes.ProductsListSubmitBtn} type="submit">Add</button>
+      </div>
     </form>  
   );
 };
